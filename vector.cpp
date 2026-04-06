@@ -76,6 +76,9 @@ cout<<"print all vector y element after sort"<<endl;
 for(int i=0;i<y.size();i++){
     cout<<y[i]<<endl;
 }
+// for(auto u:y){
+//     cout<<"each element: "<<u<<endl;
+// }
 
 sort(y.begin()+1,y.begin()+5); // y er 1st index theke last index porjonto sort kora
 cout<<"print all vector y element after sort from index 1 to end+5 index"<<endl;
