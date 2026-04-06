@@ -51,13 +51,52 @@ for(int i=0;i<temp.size();i++){
     cout<<temp[i]<<endl;
 }
 
-//vector iterator
+// vector iterator
 
 vector<int>:: iterator it;
 cout<<"print all vector v1 element using iterator"<<endl;
 for(it=v1.begin();it!=v1.end();it++){
     cout<<"iterator element: "<<*it<<endl; // *it(pointer) means iterator er value print kora
 }
+
+// n==0 porjonto user input nite thakbe
+vector<int> k;
+cout<<"enter the elements of vector k (enter 0 to stop input)"<<endl;
+int l;
+while(cin>>l){
+    if(l==0) break;
+    k.push_back(l);
+}
+
+// vector sort kora
+vector<int>y={3,1,4,15,2,7,9,43,6,10};
+sort(y.begin(),y.end());
+
+cout<<"print all vector y element after sort"<<endl;
+for(int i=0;i<y.size();i++){
+    cout<<y[i]<<endl;
+}
+
+sort(y.begin()+1,y.begin()+5); // y er 1st index theke last index porjonto sort kora
+cout<<"print all vector y element after sort from index 1 to end+5 index"<<endl;
+for(int i=0;i<y.size();i++){
+    cout<<y[i]<<endl;
+}
+
+//boro theke choto sort kora
+sort(y.begin(),y.end(),greater<int>());
+cout<<"print all vector y element after sort in descending order"<<endl;
+for(int i=0;i<y.size();i++){
+    cout<<y[i]<<endl;
+}
+
+//alternate way to sort in descending order
+sort(y.rbegin(),y.rend());
+cout<<"print all vector y element after sort in descending order using alternate way"<<endl;
+for(int i=0;i<y.size();i++){
+    cout<<y[i]<<endl;
+}
+
 
 
 // v.clear();
