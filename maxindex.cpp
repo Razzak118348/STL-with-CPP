@@ -7,5 +7,6 @@ int main(){
 
 int m=max_element(v.begin()+1,v.begin()+5)-v.begin();// for specific range max index
 cout<<"max element index: "<<m<<endl;
+cout<<"max element : "<<v[m]<<endl;
     return 0;
 }
